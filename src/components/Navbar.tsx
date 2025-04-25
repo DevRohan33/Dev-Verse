@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Code, Lightbulb, Trophy } from "lucide-react";
+import { BookOpen, Code, Lightbulb, Trophy, Gamepad } from "lucide-react";
 
 const Navbar: React.FC = () => {
   return (
@@ -24,6 +24,10 @@ const Navbar: React.FC = () => {
             <BookOpen className="h-4 w-4" />
             <span>Learning Paths</span>
           </Link>
+          <Link to="/projects" className="flex items-center gap-1 text-muted-foreground transition-colors hover:text-foreground">
+            <Code className="h-4 w-4" />
+            <span>Projects</span>
+          </Link>
           <Link to="/ai-tools" className="flex items-center gap-1 text-muted-foreground transition-colors hover:text-foreground">
             <Lightbulb className="h-4 w-4" />
             <span>AI Tools</span>
@@ -31,6 +35,10 @@ const Navbar: React.FC = () => {
           <Link to="/practice" className="flex items-center gap-1 text-muted-foreground transition-colors hover:text-foreground">
             <Trophy className="h-4 w-4" />
             <span>Practice</span>
+          </Link>
+          <Link to="/fun" className="flex items-center gap-1 text-muted-foreground transition-colors hover:text-foreground">
+            <Gamepad className="h-4 w-4" />
+            <span>Fun Zone</span>
           </Link>
         </nav>
         

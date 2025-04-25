@@ -12,6 +12,7 @@ import Practice from "./pages/Practice";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Fun from "./pages/Fun";
+import Projects from "./pages/Projects";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/learning-paths" element={<LearningPaths />} />
           <Route path="/ai-tools" element={<AITools />} />
           <Route path="/practice" element={<Practice />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/fun" element={<Fun />} />
