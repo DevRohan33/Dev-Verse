@@ -1,11 +1,10 @@
-
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { toast } from "@/components/ui/sonner";
-import { GamePad, Code2, Zap } from "lucide-react";
+import { Gamepad, Code2, Zap } from "lucide-react";
 
 const Fun = () => {
   const [wheelAngle, setWheelAngle] = useState(0);
@@ -66,7 +65,7 @@ const Fun = () => {
         
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-            <GamePad className="w-6 h-6" />
+            <Gamepad className="w-6 h-6" />
             Coding Mini-Games
           </h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
