@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -20,10 +19,19 @@ const Hero: React.FC = () => {
             and real-world practice all in one place.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gradient-to-r from-devverse-purple to-devverse-blue text-white" asChild>
+            <Button 
+              size="lg" 
+              className="bg-[#3B82F6] hover:bg-[#60A5FA] text-white font-semibold transition-colors"
+              asChild
+            >
               <Link to="/signup">Start Learning for Free</Link>
             </Button>
-            <Button variant="outline" size="lg" asChild>
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="bg-transparent text-white border-white/20 hover:bg-white/10"
+              asChild
+            >
               <Link to="/learning-paths">Explore Paths</Link>
             </Button>
           </div>
